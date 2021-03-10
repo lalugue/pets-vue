@@ -1,0 +1,18 @@
+.pets-large-icon {
+	font-size: 15em;
+	margin: 2vw;
+}
+
+.grow { 
+	transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+	transform: scale(1.1);
+}
+
+.footer {
+	position: absolute;
+	height: 60px;
+	bottom: 0;
+}
