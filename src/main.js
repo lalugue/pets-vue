@@ -1,4 +1,33 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+
+//Vue.config.productionTip = false
+
+//routes
+import Pet from './components/Pet.vue'
+import { createRouter, createWebHistory } from 'vue-router'
+
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: App
+    },
+     {
+      path: '/pet/:pet_name',
+      name: 'pet',
+      component: Pet           
+    }    
+  ]
+})
+
+
+
+const app = createApp(App)
+app.use(router)
+
+app.mount('#app')
