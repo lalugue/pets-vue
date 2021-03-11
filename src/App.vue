@@ -30,35 +30,37 @@
         Pets
       </h1>
       <p>A small site for my favorite pets</p>
+   
 
-      <router-link :to="{ name: 'pet', params: { pet_name: 'dog' }}">        
-         <i class="orange fas fa-dog pets-large-icon grow"></i>        
-      </router-link>
-      <a href="cat.html">
-        <i class="fas fa-cat pets-large-icon grow"></i>
-      </a>
-      <a href="fish.html">
-        <i class="fas fa-fish pets-large-icon grow"></i>
-      </a>	  
-      </div>  
+     
+      <router-view>
+     
+         </router-view>  
+      </div>
       </body>
+
+       
 
       <footer class="footer">      
         Check out my other stuff at <a href="https://github.com/lalugue">Github</a> - Theme from <a href="https://bootswatch.com/">Bootswatch</a>      
       </footer>	  
 
-      <router-view></router-view>
+     
    
 </template>
 
 <script>
+//import AllPets from "./components/AllPets.vue"
 
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    //AllPets
+  }
 }
 </script>
 
 <style>
-@import "assets/styles/bootstrap.min.css";
-@import "assets/styles/style.css";
+  @import "assets/styles/bootstrap.min.css";
+  @import "assets/styles/style.css";
 </style>
