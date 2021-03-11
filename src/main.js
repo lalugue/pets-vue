@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import AllPets from './components/AllPets.vue'
 
 
 //Vue.config.productionTip = false
@@ -15,7 +16,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: App
+      component: AllPets
     },
      {
       path: '/pet/:pet_name',
