@@ -1,11 +1,11 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import Pet from "./components/Pet.vue";
 import AllPets from "./components/AllPets.vue";
 
 //Vue.config.productionTip = false
 
 //routes
-import Pet from "./components/Pet.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
