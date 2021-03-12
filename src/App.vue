@@ -10,9 +10,11 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav mr-auto">                    
-            <li class="nav-item">
+          <ul class="navbar-nav mr-auto"> 
+            <li class="nav-item">  
+              <router-link :to="{ name: 'pet', params: { pet_name: 'dog' }}">             
               <a class="nav-link">Dogs</a>
+              </router-link>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cat.html">Cats</a>
