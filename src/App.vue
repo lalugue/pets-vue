@@ -4,7 +4,9 @@
   <body>
     <div class="bs-component">
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="home.html">Pets</a>
+        <router-link :to="{ name: 'home'}"> 
+        <a class="navbar-brand">Pets</a>
+        </router-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
