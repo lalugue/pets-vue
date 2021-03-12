@@ -15,14 +15,18 @@
           <ul class="navbar-nav mr-auto"> 
             <li class="nav-item">  
               <router-link :to="{ name: 'pet', params: { pet_name: 'dog' }}">             
-              <a class="nav-link">Dogs</a>
+                <a class="nav-link">Dogs</a>
               </router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="cat.html">Cats</a>
+              <router-link :to="{ name: 'pet', params: { pet_name: 'cat' }}">
+                <a class="nav-link">Cats</a>
+              </router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Fish</a>
+              <router-link :to="{ name: 'pet', params: { pet_name: 'fish' }}">
+                <a class="nav-link">Fish</a>
+              </router-link>
             </li>                    
           </ul>                  
         </div>
