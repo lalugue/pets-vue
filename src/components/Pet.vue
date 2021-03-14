@@ -1,5 +1,9 @@
 <template>
-  <p>Pet is {{ pet_name }}</p>
+  <h1>{{pet_name}}</h1>
+
+      <p>Dogs are loyal. They like to sniff stuff.</p>
+
+      <i class="fas fa-dog pets-large-icon"></i>
 </template>
 
 <script>
