@@ -1,9 +1,9 @@
 <template>
-  <h1>{{pet_name}}</h1>
+  <h1>{{ pet_name }}</h1>
 
-      <p>Dogs are loyal. They like to sniff stuff.</p>
+  <p>{{ $store.state.pet_desc }}</p>
 
-      <i class="fas fa-dog pets-large-icon"></i>
+  <i class="fas fa-dog pets-large-icon"></i>
 </template>
 
 <script>
