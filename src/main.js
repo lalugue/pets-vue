@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import Pet from "./components/Pet.vue";
 import AllPets from "./components/AllPets.vue";
+import {createStore} from "vuex";
 
 //Vue.config.productionTip = false
 
@@ -24,7 +25,21 @@ const router = createRouter({
   ]
 });
 
+//Vuex
+const store = createStore({
+  state: {
+    count: 0,
+    pet_desc: 'Dogs are loyal. They like to sniff stuff.'
+  },
+  mutations: {
+    increment (state) {
+      state.count++
+    }
+  }
+})
+
 const app = createApp(App);
 app.use(router);
+app.use(store);
 
 app.mount("#app");
