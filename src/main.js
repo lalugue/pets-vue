@@ -27,13 +27,12 @@ const router = createRouter({
 
 //Vuex
 const store = createStore({
-  state: {
-    count: 0,
+  state: {    
     pet_desc: 'Dogs are loyal. They like to sniff stuff.'
   },
   mutations: {
-    increment (state) {
-      state.count++
+    setPetDesc (state, petName) {
+      state.pet_desc = petName;
     }
   }
 })
