@@ -18,7 +18,8 @@ export default {
       return "fas fa-" + petName + " pets-large-icon";
     }
   },
-  beforeRouteUpdate(to, from, next) {    
+  beforeRouteUpdate(to, from, next) {
+    this.$store.commit('setPetDesc', to.params.pet_name);    
     this.pet_name = to.params.pet_name;    
     next();
   }
