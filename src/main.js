@@ -13,7 +13,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: "/",
+      path: "/pets-vue",
       name: "home",
       component: AllPets
     },

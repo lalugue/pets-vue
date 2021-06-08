@@ -10,3 +10,14 @@
     <i class="fas fa-fish pets-large-icon grow"></i>
   </router-link>
 </template>
+
+<script>
+export default {
+  watch: {
+    $route(to) {
+      this.$store.commit('setPetDesc', to.params.pet_name);    
+      this.pet_name = to.params.pet_name;     
+    }
+  }  
+};
+</script>
