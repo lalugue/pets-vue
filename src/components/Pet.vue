@@ -17,6 +17,11 @@ export default {
     setPetClass: function(petName){      
       return "fas fa-" + petName + " pets-large-icon";
     }
+  },
+  beforeRouteUpdate(to, from, next) {    
+    this.pet_name = to.params.pet_name;    
+    next();
   }
+  
 };
 </script>
