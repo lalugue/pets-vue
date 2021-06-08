@@ -3,7 +3,7 @@
 
   <p>{{ $store.state.pet_desc }}</p>
 
-  <i class="fas fa-dog pets-large-icon"></i>
+  <i :class="setPetClass(pet_name)"></i>  
 </template>
 
 <script>
@@ -12,6 +12,11 @@ export default {
     return {
       pet_name: this.$route.params.pet_name
     };
+  },
+  methods: {
+    setPetClass: function(petName){      
+      return "fas fa-" + petName + " pets-large-icon";
+    }
   }
 };
 </script>
