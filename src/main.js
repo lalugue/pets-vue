@@ -28,11 +28,25 @@ const router = createRouter({
 //Vuex
 const store = createStore({
   state: {    
-    pet_desc: 'Dogs are loyal. They like to sniff stuff.'
+    pet_desc: ""
   },
   mutations: {
     setPetDesc (state, petName) {
-      state.pet_desc = petName;
+      let newPetDesc = "";
+      switch(petName){
+        case "dog":
+          newPetDesc = "Dogs are loyal. They like to sniff stuff.";
+          break;
+        case "cat":
+          newPetDesc = "Cats are charming. They like to explore when no one is looking.";
+          break;
+        case "fish":
+          newPetDesc = "Fish are swimmy. They like to swim all day.";
+          break;
+        default:
+          newPetDesc = "All pets are adorable";
+      }
+      state.pet_desc = newPetDesc;
     }
   }
 })
