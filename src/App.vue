@@ -64,7 +64,4 @@ export default {
 };
 </script>
 
-<style>
-@import "assets/styles/bootstrap.min.css";
-@import "assets/styles/style.css";
-</style>
+

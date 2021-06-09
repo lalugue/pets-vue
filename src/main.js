@@ -3,6 +3,8 @@ import App from "./App.vue";
 import Pet from "./components/Pet.vue";
 import AllPets from "./components/AllPets.vue";
 import {createStore} from "vuex";
+import "./assets/styles/bootstrap.min.css";
+import "./assets/styles/style.css";
 
 //Vue.config.productionTip = false
 
