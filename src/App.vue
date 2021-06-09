@@ -41,7 +41,7 @@
       </nav>
     </div>
 
-    <div class="container">          
+    <div class="container">
       <router-view> </router-view>
     </div>
   </body>
@@ -54,14 +54,7 @@
 </template>
 
 <script>
-//import AllPets from "./components/AllPets.vue"
-
 export default {
   name: "App",
-  components: {
-    //AllPets
-  }
 };
 </script>
-
-

@@ -18,9 +18,9 @@
 export default {
   watch: {
     $route(to) {
-      this.$store.commit('setPetDesc', to.params.pet_name);    
-      this.pet_name = to.params.pet_name;     
-    }
-  }  
+      this.$store.commit("setPetDesc", to.params.pet_name);
+      this.pet_name = to.params.pet_name;
+    },
+  },
 };
 </script>

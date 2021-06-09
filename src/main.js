@@ -2,7 +2,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import Pet from "./components/Pet.vue";
 import AllPets from "./components/AllPets.vue";
-import {createStore} from "vuex";
+import { createStore } from "vuex";
 import "./assets/styles/bootstrap.min.css";
 import "./assets/styles/style.css";
 
@@ -29,18 +29,19 @@ const router = createRouter({
 
 //Vuex
 const store = createStore({
-  state: {    
+  state: {
     pet_desc: ""
   },
   mutations: {
-    setPetDesc (state, petName) {
+    setPetDesc(state, petName) {
       let newPetDesc = "";
-      switch(petName){
+      switch (petName) {
         case "dog":
           newPetDesc = "Dogs are loyal. They like to sniff stuff.";
           break;
         case "cat":
-          newPetDesc = "Cats are charming. They like to explore when no one is looking.";
+          newPetDesc =
+            "Cats are charming. They like to explore when no one is looking.";
           break;
         case "fish":
           newPetDesc = "Fish are swimmy. They like to swim all day.";
@@ -51,7 +52,7 @@ const store = createStore({
       state.pet_desc = newPetDesc;
     }
   }
-})
+});
 
 const app = createApp(App);
 app.use(router);

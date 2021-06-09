@@ -3,25 +3,25 @@
 
   <p>{{ $store.state.pet_desc }}</p>
 
-  <i :class="setPetClass(pet_name)"></i>  
+  <i :class="setPetClass(pet_name)"></i>
 </template>
 
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {
-      pet_name: this.$route.params.pet_name
+      pet_name: this.$route.params.pet_name,
     };
   },
   methods: {
-    setPetClass: function(petName){      
+    setPetClass: function (petName) {
       return "fas fa-" + petName + " pets-large-icon";
-    }
+    },
   },
-    beforeRouteUpdate(to, from, next) {    
-      this.$store.commit('setPetDesc', to.params.pet_name);    
-      this.pet_name = to.params.pet_name;    
-      next();
-    }  
+  beforeRouteUpdate(to, from, next) {
+    this.$store.commit("setPetDesc", to.params.pet_name);
+    this.pet_name = to.params.pet_name;
+    next();
+  },
 };
 </script>
