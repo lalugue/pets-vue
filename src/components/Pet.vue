@@ -1,5 +1,5 @@
 <template>
-  <h1>{{ pet_name }}</h1>
+  <h1>{{ capitalizeName(pet_name) }}</h1>
 
   <p>{{ $store.state.pet_desc }}</p>
 
@@ -14,6 +14,11 @@ export default {
     };
   },
   methods: {
+    capitalizeName: function(name){
+      let firstLetter = name.charAt(0).toUpperCase();
+      let restOfName = name.slice(1);
+      return firstLetter + restOfName;
+    },
     setPetClass: function (petName) {
       return "fas fa-" + petName + " pets-large-icon";
     },
