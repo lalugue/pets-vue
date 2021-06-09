@@ -41,12 +41,7 @@
       </nav>
     </div>
 
-    <div class="container">
-      <h1>
-        Pets
-      </h1>
-      <p>A small site for my favorite pets</p>
-
+    <div class="container">          
       <router-view> </router-view>
     </div>
   </body>

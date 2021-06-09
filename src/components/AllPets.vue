@@ -1,4 +1,7 @@
 <template>
+  <h1>Pets</h1>
+  <p>A small site for my favorite pets</p>
+
   <router-link :to="{ name: 'pet', params: { pet_name: 'dog' } }">
     <i class="orange fas fa-dog pets-large-icon grow"></i>
   </router-link>
