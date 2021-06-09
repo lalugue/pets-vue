@@ -42,11 +42,6 @@
     </div>
 
     <div class="container">
-      <h1>
-        Pets
-      </h1>
-      <p>A small site for my favorite pets</p>
-
       <router-view> </router-view>
     </div>
   </body>
@@ -59,17 +54,7 @@
 </template>
 
 <script>
-//import AllPets from "./components/AllPets.vue"
-
 export default {
   name: "App",
-  components: {
-    //AllPets
-  }
 };
 </script>
-
-<style>
-@import "assets/styles/bootstrap.min.css";
-@import "assets/styles/style.css";
-</style>
